@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.calculator {
+    background-color: #f7f7f7;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    border: solid 2px #3498db;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-top: 40px;
+}
+
+#historyToggle {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+}
+
+#history {
+    display: none;
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#result {
+    background-color: #3498db;
+    width: 100%;
+    padding: 15px;
+    font-size: 28px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) inset;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    margin-top: 25px;
+}
+
+button {
+    padding: 15px;
+    font-size: 28px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #dcdcdc;
+}
+
+.clear {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.delete {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+
+.number,
+.decimal {
+    background-color: #fff;
+    color: #333;
+}
+
+.operator {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.equals {
+    background-color: #27ae60;
+    grid-row: span 3;
+    color: #fff;
+}
